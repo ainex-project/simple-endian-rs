@@ -118,6 +118,7 @@ mod bitwise_integer_ops {
     }
 }
 
+#[cfg(feature = "...")]
 #[cfg(test)]
 mod tests {
     extern crate test;

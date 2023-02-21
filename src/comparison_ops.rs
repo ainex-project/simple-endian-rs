@@ -105,9 +105,7 @@ mod byte_comps {
     }
 }
 
-
-
-
+#[cfg(feature = "...")]
 #[cfg(test)]
 mod tests {
     extern crate test;

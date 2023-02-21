@@ -1,4 +1,3 @@
-
 /// Any object implementing `SpecificEndian<T>` can be converted between big and little endian.  Implement this trait to allow for endian conversion by this crate.
 pub trait SpecificEndian<T> where Self: Into<T> + Clone + Copy {
     fn to_big_endian(&self) -> T;
@@ -252,6 +251,7 @@ mod both_endian_primatives {
 }
 
 
+#[cfg(feature = "...")]
 #[cfg(test)]
 mod tests {
     extern crate test;
