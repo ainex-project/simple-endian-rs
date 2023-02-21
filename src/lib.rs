@@ -1,5 +1,5 @@
 #![cfg_attr(not(feature = "std"), no_std)]
-#![feature(test)]
+#![cfg_attr(feature = "...", feature(test))]
 //! Many byte-order-handling libraries focus on providing code to convert to and from big- or little-endian.  However,
 //! this requires users of those libraries to use a lot of explicit logic.  This library uses the Rust type system to
 //! enforce conversions invisibly, and also ensure that they are done consistently.  A struct member can be read and written
@@ -136,6 +136,7 @@ pub use specific_endian::*;
 mod shorthand_types;
 pub use shorthand_types::*;
 
+#[cfg(feature = "...")]
 #[cfg(test)]
 mod tests {
     extern crate test;
@@ -255,5 +256,5 @@ mod tests {
             }
         });
     }
-    
+
 }

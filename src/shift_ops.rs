@@ -89,6 +89,7 @@ mod le {
     }
 }
 
+#[cfg(feature = "...")]
 #[cfg(test)]
 mod tests {
     extern crate test;
